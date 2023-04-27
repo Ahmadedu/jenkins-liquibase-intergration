@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    MARIADB_CREDS=credentials('mariadb-credentials')
+    MARIADB_CREDS=credentials('db-creds')
   }
   stages {
     stage('Verify version') {
